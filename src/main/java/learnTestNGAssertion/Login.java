@@ -19,16 +19,16 @@ public class Login {
 		String title = driver.getTitle();
 		String expectedTitle = "LetCode";
 		// hard assert
-				Assert.assertEquals(title, expectedTitle); 
-		//		assertTrue(title.equals(expectedTitle));
+		Assert.assertEquals(title, expectedTitle); 
+		assertTrue(title.equals(expectedTitle));
 		WebElement loginBtn = driver.findElementByLinkText("Log in");
-		//		Assert.assertTrue(loginBtn.isDisplayed());
+		Assert.assertTrue(loginBtn.isDisplayed());
 
 		// soft assert
 		SoftAssert sftassert = new SoftAssert();
 		sftassert.assertEquals(title, expectedTitle);
 		sftassert.assertTrue(loginBtn.isDisplayed());
-		
+
 		sftassert.assertAll();
 		driver.quit();
 	}
