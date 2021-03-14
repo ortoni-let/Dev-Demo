@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class TEst {
 	
 	public static void main(String[] args) {
-		// Jim has deleted
+		String a = "A";
+		String b = "C";
+		System.out.println(b.compareTo(a));
+		// this is koushik working fine
 	}
 
 }
